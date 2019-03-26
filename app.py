@@ -25,7 +25,7 @@ def bot():
     replyToken = msg_in_json["events"][0]['replyToken']
 
     # ทดลอง Echo ข้อความกลับไปในรูปแบบที่ส่งไป-มา (แบบ json)
-    replyStack.append(msg_in_string)
+    replyStack.append("ajarn prayat")
     reply(replyToken, replyStack[:5])
     
     return 'OK',200
