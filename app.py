@@ -4,7 +4,8 @@ import requests
 
 # ตรง YOURSECRETKEY ต้องนำมาใส่เองครับจะกล่าวถึงในขั้นตอนต่อๆ ไป
 global LINE_API_KEY
-LINE_API_KEY = 'Bearer PlbZSSvpwn72lFKK1SmeA/HrXJcrPrzA3yGRbjnf79meRyYAXxpcnVBBwvMt1sjO5KOuDAOSV/GtEsX9eL63P1k53Zuo3bVyErr3MqImIuSTpQDg90dBcJR1CDQGS6kpTLv3zDJcyXcOT1BFUwc4agdB04t89/1O/w1cDnyilFU='
+# ห้ามลบคำว่า Bearer ออกนะครับเมื่อนำ access token มาใส่
+LINE_API_KEY = 'Bearer Yt+cFnKVPyfwo0Ji7SgxerlZrFMtIdJFHHK+TIpUU4U1jcfhcEQrmV4h+P4F90YeH0gWIMlUDrFfou9tenDDjlGhA5iomBW80TbRc5SMv+OfKaMqfhcuPNK0FXGD6boCSyeXaijClULPBBneiKWeRwdB04t89/1O/w1cDnyilFU='
 
 app = Flask(__name__)
  
@@ -22,7 +23,6 @@ def bot():
     msg_in_string = json.dumps(msg_in_json)
     text = msg_in_json["events"][0]['message']['text'].lower().strip()
     print(msg_in_json["events"][0]['message']['text'].lower().strip())
-    
     # Token สำหรับตอบกลับ (จำเป็นต้องใช้ในการตอบกลับ)
     replyToken = msg_in_json["events"][0]['replyToken']
     
@@ -64,11 +64,11 @@ def bot():
     # ตอบข้อความ "นี่คือรูปแบบข้อความที่รับส่ง" กลับไป
     replyQueue.append('นี่คือรูปแบบข้อความที่รับส่ง')
     
-    # ทดลอง Echo ข้อความกลับไปในรูปแบบที่ส่งไป-มา (แบบ json)
+    # ทดลอง Echo ข้อความกลับไปในรูปแบบที่ส่งไปมา (แบบ json)
     replyQueue.append(msg_in_string)
     reply(replyToken, replyQueue[:5])
     
-    return 'OK',200
+    return 'OK', 200
  
 def reply(replyToken, textList):
     # Method สำหรับตอบกลับข้อความประเภท text กลับครับ เขียนแบบนี้เลยก็ได้ครับ
