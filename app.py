@@ -41,11 +41,7 @@ def bot():
     # lower เพื่อให้เป็นตัวพิมพ์เล็ก strip เพื่อนำช่องว่างหัวท้ายออก ครับ
     if(text == "how are you"):
          print('in if')
-<<<<<<< HEAD
          replyQueue.append("I am Fat")
-=======
-         replyQueue.append("I am Fine")
->>>>>>> 8eac276ec012b4d5e126dcc631c7e8e4ff8d571d
          replyQueue.append("How about you")
          reply(replyToken, replyQueue[:5])
          return 'OK', 200
