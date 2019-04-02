@@ -42,7 +42,7 @@ def bot():
     if(text == "how are you"):
          print('in if')
          replyQueue.append("I am Fat")
-         replyQueue.append("How about you")
+         replyQueue.append("and you")
          reply(replyToken, replyQueue[:5])
          return 'OK', 200
 
