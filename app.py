@@ -5,7 +5,11 @@ import requests
 # ตรง YOURSECRETKEY ต้องนำมาใส่เองครับจะกล่าวถึงในขั้นตอนต่อๆ ไป
 global LINE_API_KEY
 # ห้ามลบคำว่า Bearer ออกนะครับเมื่อนำ access token มาใส่
+<<<<<<< HEAD
 LINE_API_KEY = 'Bearer iKjmNKbdqrNycF+6wq9qwXBYnYo9RFmJkA0nQoCbmsXnKlZY3FLJm+j3n7C9ql4b5KOuDAOSV/GtEsX9eL63P1k53Zuo3bVyErr3MqImIuS01qPvJ5sFrUmNfyvuzU4gqRH1JK9kZ1mpV7H9PS8m6QdB04t89/1O/w1cDnyilFU='
+=======
+LINE_API_KEY = 'Bearer N6X69KGY7TijrIGma2FFUm/2Z+bTjUS65QkZCcZ3LlpT2EI7JUpnNLaUopxehDCf5KOuDAOSV/GtEsX9eL63P1k53Zuo3bVyErr3MqImIuTB22DKzrTdIcu0B2Xw7ykvWsbsanseA2OFt9lN3AqX1wdB04t89/1O/w1cDnyilFU= '
+>>>>>>> 79a7b851f0e954f790b532971e2b55099c247f92
 
 app = Flask(__name__)
 
