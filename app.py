@@ -45,8 +45,8 @@ def bot():
     # เช่น ถ้าส่งมาเป็น location ทำการดึง lat long ออกมาทำบางอย่าง เป็นต้น
     if(text == "how are you"):
          print('in if')
-         replyQueue.append("I am Fat")
-         replyQueue.append("and oil")
+         replyQueue.append("I am very Fat")
+         replyQueue.append("and oil very Fat too")
          reply(replyToken, replyQueue[:5])
          return 'OK', 200
 
