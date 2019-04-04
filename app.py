@@ -46,14 +46,6 @@ def bot():
          reply(replyToken, replyQueue[:5])
          return 'OK', 200 
 
-    response_dict = {'ปวดหัว'}
-    if text in response_dict:
-         replyQueue.append(reponse_dict[text])
-    else:
-         replyQueue.append('เป็นมากี่วันแล้วคะ')
-         reply(replyToken, replyQueue[:5])
-         return 'OK', 200
-
     # ตัวอย่างการทำให้ bot ถาม-ตอบได้ แบบ exact match
     # response_dict = {'สวัสดี':'สวัสดีครับ'}
     # if text in response_dict:
