@@ -11,12 +11,12 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return "Hi!"
+    return 'This is chatbot server'
 @app.route('/bot', methods=['POST'])
 
 def bot():
     # ข้อความที่ต้องการส่งกลับ
-    replyQueue = list()
+    
 
     # ข้อความที่ได้รับมา
     msg_in_json = request.get_json()
@@ -40,9 +40,13 @@ def bot():
     # แต่ก็สามารถประมวลผลข้อมูลประเภทอื่นได้นะครับ
     # เช่น ถ้าส่งมาเป็น location ทำการดึง lat long ออกมาทำบางอย่าง เป็นต้น
     if(text == "สวัสดีค่ะ"):
-         print('in if')
-         replyQueue.append("ดีคร้า")
-         replyQueue.append("เป็นอะไรมาคะ")
+          print('in if')
+          replyQueue.append("สวัสดีค่ะ")
+          replyQueue.append("เป็นอะไรมาคะ")
+        if(text == "ปวดหัว"):
+        print('in if')
+        replyQueue.append("หกฟ")
+        replyQueue.append("เป็นอะไรมาคะ")
          reply(replyToken, replyQueue[:5])
          return 'OK', 200
 
