@@ -16,7 +16,7 @@ def index():
 
 def bot():
     # ข้อความที่ต้องการส่งกลับ
-    
+    replyQueue = list()
 
     # ข้อความที่ได้รับมา
     msg_in_json = request.get_json()
