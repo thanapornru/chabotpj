@@ -46,7 +46,7 @@ def bot():
          reply(replyToken, replyQueue[:5])
          return 'OK', 200 
 
-    if(text == "ปวดหัวค่ะ":"ปวดหัวมาก"):
+    if(text == "ปวดหัวค่ะ"):
          print('in if')
          replyQueue.append("งั้นลองเอายาพาราเซตามอลไปทานก่อนนะคะ")
          reply(replyToken, replyQueue[:5])
