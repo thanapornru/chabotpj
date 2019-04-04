@@ -22,7 +22,7 @@ def bot():
     msg_in_json = request.get_json()
     msg_in_string = json.dumps(msg_in_json)
     text = msg_in_json["events"][0]['message']['text'].lower().strip()
-    print(msg_in_json["events"][0]['message']['text'].lower().strip())
+    #print(msg_in_json["events"][0]['message']['text'].lower().strip())
     # Token สำหรับตอบกลับ (จำเป็นต้องใช้ในการตอบกลับ)
     replyToken = msg_in_json["events"][0]['replyToken']
 
