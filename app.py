@@ -43,6 +43,8 @@ def bot():
          print('in if')
          replyQueue.append("สวัสดีค่ะ")
          replyQueue.append("เป็นอะไรมาคะ")
+    else:
+         replyQueue.append('ไม่รู้ว่าจะตอบอะไรดี TT')
          reply(replyToken, replyQueue[:5])
          return 'OK', 200 
 
