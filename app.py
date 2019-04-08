@@ -42,13 +42,13 @@ def bot():
     if(text == "สวัสดีค่ะ"):
          print('in if')
          replyQueue.append("อยากทราบวันลงทะเบียนใช่ไหมคะ")
-         replyQueue.append("กรุณาพิมพ์รหัสนักศึกษา 10 ตัวค่ะ")
+         replyQueue.append("กรุณาพิมพ์รหัสนักศึกษา 2 ตัวหน้าค่ะ")
          reply(replyToken, replyQueue[:5])
          return 'OK', 200
-    text 5805002432
-    if(text <= 5805002432):
-         print('in if')
-         replyQueue.append("กรุณาพิมพ์รหัสนักศึกษาค่ะ")
+
+    if(text =="54"):
+         print('31 มีนาคม 2562')
+         replyQueue.append("ค่ะ")
          reply(replyToken, replyQueue[:5])
          return 'OK', 200
     
