@@ -54,15 +54,28 @@ def bot():
     
     if(text =="55"):
          print('in if')
-         replyQueue.append("31 มีนาคม 2562")
-    else if(text =="56"):
-         print('in if')
-         replyQueue.append("31 มีนาคม 2562")
-    else:
-         replyQueue.append('ไม่รู้ว่าจะตอบอะไรดี TT')    
+         replyQueue.append("31 มีนาคม 2562")   
          reply(replyToken, replyQueue[:5])
          return 'OK', 200
-    
+
+    if(text =="56"):
+         print('in if')
+         replyQueue.append("31 มีนาคม 2562")   
+         reply(replyToken, replyQueue[:5])
+         return 'OK', 200
+
+    if(text =="57"):
+         print('in if')
+         replyQueue.append("31 มีนาคม 2562")   
+         reply(replyToken, replyQueue[:5])
+         return 'OK', 200
+
+    if(text >="58"):
+         print('in if')
+         replyQueue.append("3 มีนาคม 2562")   
+         reply(replyToken, replyQueue[:5])
+         return 'OK', 200
+
     # ตัวอย่างการทำให้ bot ถาม-ตอบได้ แบบ exact match
     # response_dict = {'สวัสดี':'สวัสดีครับ'}
     # if text in response_dict:
