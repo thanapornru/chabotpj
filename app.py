@@ -45,7 +45,7 @@ def bot():
          reply(replyToken, replyQueue[:5])
          return 'OK', 200
     
-    if(text == "งง"):
+    if(text == "55"):
          print('in if')
          replyQueue.append("ดีคร้า")
          replyQueue.append("เป็นอะไรมาคะ")
