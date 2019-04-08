@@ -47,8 +47,19 @@ def bot():
          return 'OK', 200
 
     if(text =="54"):
-         print('31 มีนาคม 2562')
-         replyQueue.append("ค่ะ")
+         print('in if')
+         replyQueue.append("31 มีนาคม 2562")
+         reply(replyToken, replyQueue[:5])
+         return 'OK', 200
+    
+    if(text =="55"):
+         print('in if')
+         replyQueue.append("31 มีนาคม 2562")
+    else if(text =="56"):
+         print('in if')
+         replyQueue.append("31 มีนาคม 2562")
+    else:
+         replyQueue.append('ไม่รู้ว่าจะตอบอะไรดี TT')    
          reply(replyToken, replyQueue[:5])
          return 'OK', 200
     
