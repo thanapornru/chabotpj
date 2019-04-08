@@ -45,6 +45,12 @@ def bot():
          replyQueue.append("เป็นอะไรมาคะ")
          reply(replyToken, replyQueue[:5])
          return 'OK', 200 
+         
+    response_dict = {'สวัสดี':'สวัสดีครับ'}
+    if text in response_dict:
+         replyQueue.append(reponse_dict[text])
+    else:
+         replyQueue.append('ไม่รู้ว่าจะตอบอะไรดี TT')
 
     if(text == "ปวดหัวค่ะ"):
          print('in if')
