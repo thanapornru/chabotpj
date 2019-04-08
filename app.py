@@ -43,9 +43,13 @@ def bot():
          print('in if')
          replyQueue.append("สวัสดีค่ะ")
          replyQueue.append("เป็นอะไรมาคะ")
+         reply(replyToken, replyQueue[:5])
+         return 'OK', 200 
     elif(text == รหัส 55)
          print('in if')
          replyQueue.append("วันที่ 12")
+         reply(replyToken, replyQueue[:5])
+         return 'OK', 200 
     else :
         replyQueue.append("ใส่รหัสให้ถูกต้องค่ะ")
         reply(replyToken, replyQueue[:5])
