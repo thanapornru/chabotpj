@@ -41,14 +41,14 @@ def bot():
     # เช่น ถ้าส่งมาเป็น location ทำการดึง lat long ออกมาทำบางอย่าง เป็นต้น
     if(text == "สวัสดีค่ะ"):
          print('in if')
-         replyQueue.append("กรุณาพิมพ์รหัสนักศึกษาค่ะ")
+         replyQueue.append("อยากทราบวันลงทะเบียนใช่ไหมคะ")
+         replyQueue.append("กรุณาพิมพ์รหัสนักศึกษา 10 ตัวค่ะ")
          reply(replyToken, replyQueue[:5])
          return 'OK', 200
-    
-    if(text == "55"):
+    text 5805002432
+    if(text <= 5805002432):
          print('in if')
-         replyQueue.append("ดีคร้า")
-         replyQueue.append("เป็นอะไรมาคะ")
+         replyQueue.append("กรุณาพิมพ์รหัสนักศึกษาค่ะ")
          reply(replyToken, replyQueue[:5])
          return 'OK', 200
     
