@@ -41,10 +41,10 @@ def bot():
     # เช่น ถ้าส่งมาเป็น location ทำการดึง lat long ออกมาทำบางอย่าง เป็นต้น
     if(text == "สวัสดีค่ะ"):
          print('in if')
-         replyQueue.append("สวัสดีค่ะ")
+         replyQueue.append("ดีคร้า")
          replyQueue.append("เป็นอะไรมาคะ")
          reply(replyToken, replyQueue[:5])
-         return 'OK', 200 
+         return 'OK', 200
     
     # ตัวอย่างการทำให้ bot ถาม-ตอบได้ แบบ exact match
     # response_dict = {'สวัสดี':'สวัสดีครับ'}
