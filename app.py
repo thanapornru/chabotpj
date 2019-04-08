@@ -46,39 +46,6 @@ def bot():
          reply(replyToken, replyQueue[:200])
          return 'OK', 200
 
-    if(text <="5405000017"):
-         print('in if')
-         replyQueue.append("ขออภัยค่ะรหัสหมายเลขนี้ไม่มีในระบบค่ะ")
-         replyQueue.append("กรุณาตรวจสอบหมายเลยรหัสใหม่อีกครั้งค่ะ")
-         reply(replyToken, replyQueue[:200])
-         return 'OK', 200
-
-    if(text =="5405000018"):
-         print('in if')
-         replyQueue.append("31 มีนาคม 2562")
-         replyQueue.append("อยากทราบรหัสอื่นเพิ่มเติมอีกไหมคะ?")    
-         reply(replyToken, replyQueue[:200])
-         return 'OK', 200
-
-    elif(text >="5805002440"):
-         print('in if')
-         replyQueue.append("30 มีนาคม 2562")
-         replyQueue.append("อยากทราบรหัสอื่นเพิ่มเติมอีกไหมคะ?")    
-         reply(replyToken, replyQueue[:200])
-         return 'OK', 200
-
-    elif(text >="6005004640"):
-         print('in if')
-         replyQueue.append("29 มีนาคม 2562")
-         replyQueue.append("อยากทราบรหัสอื่นเพิ่มเติมอีกไหมคะ?")  
-         reply(replyToken, replyQueue[:200])
-         return 'OK', 200
-    
-    else:
-         replyQueue.append('ไม่รู้ว่าจะตอบอะไรดี TT')
-         reply(replyToken, replyQueue[:200])
-         return 'OK', 200
-
     if(text == "มีค่ะ"):
          print('in if')
          replyQueue.append("อยากรหัสอะไรเพิ่มเติมอีกดีค่ะ")
@@ -93,6 +60,53 @@ def bot():
          reply(replyToken, replyQueue[:200])
          return 'OK', 200
     
+
+    if(text <="5405000017"):
+         print('in if')
+         replyQueue.append("ขออภัยค่ะรหัสหมายเลขนี้ไม่มีในระบบค่ะ")
+         replyQueue.append("กรุณาตรวจสอบหมายเลยรหัสใหม่อีกครั้งค่ะ")
+         reply(replyToken, replyQueue[:200])
+         return 'OK', 200
+
+    if(text >="5405000018"):
+         print('in if')
+         replyQueue.append("31 มีนาคม 2562")
+         replyQueue.append("อยากทราบรหัสอื่นเพิ่มเติมอีกไหมคะ?")    
+         reply(replyToken, replyQueue[:200])
+         return 'OK', 200
+
+    elif(text <="5805002440"):
+         print('in if')
+         replyQueue.append("31 มีนาคม 2562")
+         replyQueue.append("อยากทราบรหัสอื่นเพิ่มเติมอีกไหมคะ?")    
+         reply(replyToken, replyQueue[:200])
+         return 'OK', 200
+
+    elif(text >="5805002441"):
+         print('in if')
+         replyQueue.append("30 มีนาคม 2562")
+         replyQueue.append("อยากทราบรหัสอื่นเพิ่มเติมอีกไหมคะ?")    
+         reply(replyToken, replyQueue[:200])
+         return 'OK', 200
+
+    elif(text <="6005004640"):
+         print('in if')
+         replyQueue.append("30 มีนาคม 2562")
+         replyQueue.append("อยากทราบรหัสอื่นเพิ่มเติมอีกไหมคะ?")    
+         reply(replyToken, replyQueue[:200])
+         return 'OK', 200
+
+    elif(text >="6005004641"):
+         print('in if')
+         replyQueue.append("29 มีนาคม 2562")
+         replyQueue.append("อยากทราบรหัสอื่นเพิ่มเติมอีกไหมคะ?")  
+         reply(replyToken, replyQueue[:200])
+         return 'OK', 200
+    
+    else:
+         replyQueue.append('ไม่รู้ว่าจะตอบอะไรดี TT')
+         reply(replyToken, replyQueue[:200])
+         return 'OK', 200
 
 
     # ตัวอย่างการทำให้ bot ถาม-ตอบได้ แบบ exact match
@@ -115,7 +129,7 @@ def bot():
 
     # ทดลอง Echo ข้อความกลับไปในรูปแบบที่ส่งไปมา (แบบ json)
     replyQueue.append(msg_in_string)
-    reply(replyToken, replyQueue[:5])
+    reply(replyToken, replyQueue[:200])
 
     return 'OK', 200
 
