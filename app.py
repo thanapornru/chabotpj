@@ -46,27 +46,9 @@ def bot():
          reply(replyToken, replyQueue[:5])
          return 'OK', 200
 
-    if(text =="54"):
+    if(text =="54" :text <="58" ):
          print('in if')
          replyQueue.append("31 มีนาคม 2562")
-         reply(replyToken, replyQueue[:5])
-         return 'OK', 200
-    
-    if(text =="55"):
-         print('in if')
-         replyQueue.append("31 มีนาคม 2562")   
-         reply(replyToken, replyQueue[:5])
-         return 'OK', 200
-
-    if(text =="56"):
-         print('in if')
-         replyQueue.append("31 มีนาคม 2562")   
-         reply(replyToken, replyQueue[:5])
-         return 'OK', 200
-
-    if(text =="57"):
-         print('in if')
-         replyQueue.append("31 มีนาคม 2562")   
          reply(replyToken, replyQueue[:5])
          return 'OK', 200
 
