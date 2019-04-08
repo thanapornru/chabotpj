@@ -48,7 +48,7 @@ def bot():
 
     response_dict = {'สวัสดี':'สวัสดีครับ'}
     if text in response_dict:
-         replyQueue.append(reponse_dict[text])
+         replyQueue.append("ดีจ้า"])
     else:
          replyQueue.append('ไม่รู้ว่าจะตอบอะไรดี TT')
          reply(replyToken, replyQueue[:5])
