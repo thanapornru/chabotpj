@@ -45,12 +45,7 @@ def bot():
          replyQueue.append("เป็นอะไรมาคะ")
          reply(replyToken, replyQueue[:5])
          return 'OK', 200 
-    else :
-        replyQueue.append("ใส่รหัสให้ถูกต้องค่ะ")
-        reply(replyToken, replyQueue[:5])
-         return 'OK', 200 
-
-
+    
     # ตัวอย่างการทำให้ bot ถาม-ตอบได้ แบบ exact match
     # response_dict = {'สวัสดี':'สวัสดีครับ'}
     # if text in response_dict:
