@@ -43,29 +43,14 @@ def bot():
          print('in if')
          replyQueue.append("สวัสดีค่ะ")
          replyQueue.append("เป็นอะไรมาคะ")
-         reply(replyToken, replyQueue[:5])
+    elif(text == รหัส 55)
+         print('in if')
+         replyQueue.append("วันที่ 12")
+    else :
+        replyQueue.append("ใส่รหัสให้ถูกต้องค่ะ")
+        reply(replyToken, replyQueue[:5])
          return 'OK', 200 
 
-    response_dict = {'สวัสดี':'สวัสดีครับ'}
-    if text in response_dict:
-         replyQueue.append("ดีจ้า"])
-    else:
-         replyQueue.append('ไม่รู้ว่าจะตอบอะไรดี TT')
-         reply(replyToken, replyQueue[:5])
-         return 'OK', 200 
-
-    if(text == "ปวดหัวค่ะ"):
-         print('in if')
-         replyQueue.append("งั้นลองเอายาพาราเซตามอลไปทานก่อนนะคะ")
-         replyQueue.append("มีอาการอะไรเพิ่มอีกไหมคะ")
-         reply(replyToken, replyQueue[:5])
-         return 'OK', 200 
-    
-    if(text == "ไม่มีค่ะ"):
-         print('in if')
-         replyQueue.append("ขอบคุณที่ใช้บริการทางร้านเรานะคะ")
-         reply(replyToken, replyQueue[:5])
-         return 'OK', 200 
 
     # ตัวอย่างการทำให้ bot ถาม-ตอบได้ แบบ exact match
     # response_dict = {'สวัสดี':'สวัสดีครับ'}
