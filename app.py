@@ -42,21 +42,53 @@ def bot():
     if(text == "สวัสดีค่ะ"):
          print('in if')
          replyQueue.append("อยากทราบวันลงทะเบียนใช่ไหมคะ")
-         replyQueue.append("กรุณาพิมพ์รหัสนักศึกษา 2 ตัวหน้าค่ะ")
+         replyQueue.append("กรุณาพิมพ์รหัสนักศึกษาค่ะ")
          reply(replyToken, replyQueue[:5])
          return 'OK', 200
 
-    if(text <="58"):
+    if(text <="5405000018"):
+         print('in if')
+         replyQueue.append("ขออภัยค่ะรหัสหมายเลขนี้ไม่มีในระบบค่ะ")
+         replyQueue.append("กรุณาตรวจสอบหมายเลยรหัสใหม่อีกครั้งค่ะ")
+         reply(replyToken, replyQueue[:5])
+         return 'OK', 200
+
+    if(text >="5405000018"):
          print('in if')
          replyQueue.append("31 มีนาคม 2562")
+         replyQueue.append("อยากทราบรหัสอื่นเพิ่มเติมอีกไหมคะ?")    
          reply(replyToken, replyQueue[:5])
          return 'OK', 200
 
-    if(text >="58"):
+    if(text >="5805002440"):
          print('in if')
-         replyQueue.append("3 มีนาคม 2562")   
+         replyQueue.append("30 มีนาคม 2562")
+         replyQueue.append("อยากทราบรหัสอื่นเพิ่มเติมอีกไหมคะ?")    
          reply(replyToken, replyQueue[:5])
          return 'OK', 200
+
+    if(text >="6005004640"):
+         print('in if')
+         replyQueue.append("29 มีนาคม 2562")
+         replyQueue.append("อยากทราบรหัสอื่นเพิ่มเติมอีกไหมคะ?")  
+         reply(replyToken, replyQueue[:5])
+         return 'OK', 200
+
+    if(text == "มีค่ะ"):
+         print('in if')
+         replyQueue.append("อยากรหัสอะไรเพิ่มเติมอีกดีค่ะ")
+         replyQueue.append("สามารถพิมพ์รหัสนักศึกษาได้เลยค่ะ")
+         reply(replyToken, replyQueue[:5])
+         return 'OK', 200
+    
+    if(text == "ไม่มีค่ะ"):
+         print('in if')
+         replyQueue.append("ทางเรายินดีให้บริการค่ะ")
+         replyQueue.append("ขอบคุณค่ะ")
+         reply(replyToken, replyQueue[:5])
+         return 'OK', 200
+    
+
 
     # ตัวอย่างการทำให้ bot ถาม-ตอบได้ แบบ exact match
     # response_dict = {'สวัสดี':'สวัสดีครับ'}
