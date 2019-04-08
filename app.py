@@ -46,7 +46,7 @@ def bot():
          reply(replyToken, replyQueue[:5])
          return 'OK', 200
 
-    if(text <="5405000018"):
+    if(text <="5405000017"):
          print('in if')
          replyQueue.append("ขออภัยค่ะรหัสหมายเลขนี้ไม่มีในระบบค่ะ")
          replyQueue.append("กรุณาตรวจสอบหมายเลยรหัสใหม่อีกครั้งค่ะ")
