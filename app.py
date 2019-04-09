@@ -101,14 +101,6 @@ def bot():
          reply(replyToken, replyQueue[:5])
          return 'OK', 200
     
-    if(text==(range (1,10))):
-         print('in if')
-         replyQueue.append("11 มีนาคม 2562")
-         replyQueue.append("มีความต้องการอยากทราบรหัสอื่นเพิ่มเติมอีกไหมคะ?")    
-         reply(replyToken, replyQueue[:5])
-         return 'OK', 200
-
-    
 
     
     
