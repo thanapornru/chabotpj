@@ -101,8 +101,7 @@ def bot():
          reply(replyToken, replyQueue[:5])
          return 'OK', 200
     
-
-    
+   
     
 
 
