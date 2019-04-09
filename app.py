@@ -68,7 +68,7 @@ def bot():
          reply(replyToken, replyQueue[:200])
          return 'OK', 200
 
-    if(text >="5405000018"):
+    if(text >= "5405000018"):
          print('in if')
          replyQueue.append("31 มีนาคม 2562")
          replyQueue.append("มีความต้องการอยากทราบรหัสอื่นเพิ่มเติมอีกไหมคะ?")    
