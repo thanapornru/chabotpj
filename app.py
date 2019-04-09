@@ -59,9 +59,8 @@ def bot():
          replyQueue.append("ขอบคุณค่ะ")
          reply(replyToken, replyQueue[:200])
          return 'OK', 200
-    
 
-    if(text <="5405000017"):
+    if(text <= "5405000017"):
          print('in if')
          replyQueue.append("ขออภัยค่ะรหัสหมายเลขนี้ไม่มีในระบบค่ะ")
          replyQueue.append("กรุณาตรวจสอบหมายเลยรหัสใหม่อีกครั้งค่ะ")
@@ -75,28 +74,28 @@ def bot():
          reply(replyToken, replyQueue[:200])
          return 'OK', 200
     
-    if(text <="5805002440"):
+    if(text <= "5805002440"):
          print('in if')
          replyQueue.append("31 มีนาคม 2562")
          replyQueue.append("มีความต้องการอยากทราบรหัสอื่นเพิ่มเติมอีกไหมคะ?")    
          reply(replyToken, replyQueue[:200])
          return 'OK', 200
 
-    if(text >="5805002441"):
+    if(text >= "5805002441"):
          print('in if')
          replyQueue.append("30 มีนาคม 2562")
          replyQueue.append("มีความต้องการอยากทราบรหัสอื่นเพิ่มเติมอีกไหมคะ?")    
          reply(replyToken, replyQueue[:200])
          return 'OK', 200
 
-    if(text <="6005004641"):
+    if(text <= "6005004641"):
          print('in if')
          replyQueue.append("30 มีนาคม 2562")
          replyQueue.append("มีความต้องการอยากทราบรหัสอื่นเพิ่มเติมอีกไหมคะ?")    
          reply(replyToken, replyQueue[:200])
          return 'OK', 200
    
-    if (text >="6005004641"):
+    if (text >= "6005004641"):
          print('in if')
          replyQueue.append("29 มีนาคม 2562")
          replyQueue.append("มีความต้องการอยากทราบรหัสอื่นเพิ่มเติมอีกไหมคะ?")  
@@ -104,7 +103,7 @@ def bot():
          return 'OK', 200
     
      else:
-         replyQueue.append('ไม่รู้ว่าจะตอบอะไรดี TT')
+         replyQueue.append("ไม่รู้ว่าจะตอบอะไรดี TT")
          reply(replyToken, replyQueue[:200])
          return 'OK', 200
 
