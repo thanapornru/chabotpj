@@ -60,23 +60,16 @@ def bot():
          reply(replyToken, replyQueue[:5])
          return 'OK', 200
 
-    if(text <= "5405000017"):
+    if(text >= "6005004641"):
          print('in if')
-         replyQueue.append("ขออภัยค่ะรหัสหมายเลขนี้ไม่มีในระบบค่ะ")
-         replyQueue.append("กรุณาตรวจสอบหมายเลยรหัสใหม่อีกครั้งค่ะ")
+         replyQueue.append("29 มีนาคม 2562")
+         replyQueue.append("มีความต้องการอยากทราบรหัสอื่นเพิ่มเติมอีกไหมคะ?")  
          reply(replyToken, replyQueue[:5])
          return 'OK', 200
 
-    if(text >= "5405000018"):
+    if(text <= "6005004640"):
          print('in if')
-         replyQueue.append("31 มีนาคม 2562")
-         replyQueue.append("มีความต้องการอยากทราบรหัสอื่นเพิ่มเติมอีกไหมคะ?")    
-         reply(replyToken, replyQueue[:5])
-         return 'OK', 200
-    
-    if(text <= "5805002440"):
-         print('in if')
-         replyQueue.append("31 มีนาคม 2562")
+         replyQueue.append("30 มีนาคม 2562")
          replyQueue.append("มีความต้องการอยากทราบรหัสอื่นเพิ่มเติมอีกไหมคะ?")    
          reply(replyToken, replyQueue[:5])
          return 'OK', 200
@@ -88,19 +81,31 @@ def bot():
          reply(replyToken, replyQueue[:5])
          return 'OK', 200
 
-    if(text <= "6005004640"):
+    if(text <= "5805002440"):
          print('in if')
-         replyQueue.append("30 มีนาคม 2562")
+         replyQueue.append("31 มีนาคม 2562")
          replyQueue.append("มีความต้องการอยากทราบรหัสอื่นเพิ่มเติมอีกไหมคะ?")    
          reply(replyToken, replyQueue[:5])
          return 'OK', 200
-   
-    if(text >= "6005004641"):
+
+    if(text >= "5405000018"):
          print('in if')
-         replyQueue.append("29 มีนาคม 2562")
-         replyQueue.append("มีความต้องการอยากทราบรหัสอื่นเพิ่มเติมอีกไหมคะ?")  
+         replyQueue.append("31 มีนาคม 2562")
+         replyQueue.append("มีความต้องการอยากทราบรหัสอื่นเพิ่มเติมอีกไหมคะ?")    
          reply(replyToken, replyQueue[:5])
          return 'OK', 200
+    
+    if(text <= "5405000017"):
+         print('in if')
+         replyQueue.append("ขออภัยค่ะรหัสหมายเลขนี้ไม่มีในระบบค่ะ")
+         replyQueue.append("กรุณาตรวจสอบหมายเลยรหัสใหม่อีกครั้งค่ะ")
+         reply(replyToken, replyQueue[:5])
+         return 'OK', 200
+
+    
+
+    
+    
 
 
     # ตัวอย่างการทำให้ bot ถาม-ตอบได้ แบบ exact match
