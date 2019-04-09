@@ -80,13 +80,6 @@ def bot():
          reply(replyToken, replyQueue[:5])
          return 'OK', 200
 
-    if(text >= "5805002441"):
-         print('in if')
-         replyQueue.append("30 มีนาคม 2562")
-         replyQueue.append("มีความต้องการอยากทราบรหัสอื่นเพิ่มเติมอีกไหมคะ?")    
-         reply(replyToken, replyQueue[:5])
-         return 'OK', 200
-
     if(text <= "5805002440"):
          print('in if')
          replyQueue.append("31 มีนาคม 2562")
@@ -94,12 +87,6 @@ def bot():
          reply(replyToken, replyQueue[:5])
          return 'OK', 200
 
-    if(text >= "5405000018"):
-         print('in if')
-         replyQueue.append("31 มีนาคม 2562")
-         replyQueue.append("มีความต้องการอยากทราบรหัสอื่นเพิ่มเติมอีกไหมคะ?")    
-         reply(replyToken, replyQueue[:5])
-         return 'OK', 200
     
     
 
