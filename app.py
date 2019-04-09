@@ -43,56 +43,56 @@ def bot():
          print('in if')
          replyQueue.append("อยากทราบวันลงทะเบียนใช่ไหมคะ")
          replyQueue.append("กรุณาพิมพ์รหัสนักศึกษาค่ะ")
-         reply(replyToken, replyQueue[:200])
+         reply(replyToken, replyQueue[:5])
          return 'OK', 200
 
     if(text == "มีค่ะ"):
          print('in if')
          replyQueue.append("อยากรหัสอะไรเพิ่มเติมอีกดีค่ะ")
          replyQueue.append("สามารถพิมพ์รหัสนักศึกษาได้เลยค่ะ")
-         reply(replyToken, replyQueue[:200])
+         reply(replyToken, replyQueue[:5])
          return 'OK', 200
     
     if(text == "ไม่มีค่ะ"):
          print('in if')
          replyQueue.append("ทางเรายินดีให้บริการค่ะ")
          replyQueue.append("ขอบคุณค่ะ")
-         reply(replyToken, replyQueue[:200])
+         reply(replyToken, replyQueue[:5])
          return 'OK', 200
 
     if(text <= "5405000017"):
          print('in if')
          replyQueue.append("ขออภัยค่ะรหัสหมายเลขนี้ไม่มีในระบบค่ะ")
          replyQueue.append("กรุณาตรวจสอบหมายเลยรหัสใหม่อีกครั้งค่ะ")
-         reply(replyToken, replyQueue[:200])
+         reply(replyToken, replyQueue[:5])
          return 'OK', 200
 
     if(text >= "5405000018"):
          print('in if')
          replyQueue.append("31 มีนาคม 2562")
          replyQueue.append("มีความต้องการอยากทราบรหัสอื่นเพิ่มเติมอีกไหมคะ?")    
-         reply(replyToken, replyQueue[:200])
+         reply(replyToken, replyQueue[:5])
          return 'OK', 200
     
     if(text <= "5805002440"):
          print('in if')
          replyQueue.append("31 มีนาคม 2562")
          replyQueue.append("มีความต้องการอยากทราบรหัสอื่นเพิ่มเติมอีกไหมคะ?")    
-         reply(replyToken, replyQueue[:200])
+         reply(replyToken, replyQueue[:5])
          return 'OK', 200
 
-    if(text == "5805002441-6005004641"):
+    if((text >= "5805002441"):(text <= "6005004640")):
          print('in if')
          replyQueue.append("30 มีนาคม 2562")
          replyQueue.append("มีความต้องการอยากทราบรหัสอื่นเพิ่มเติมอีกไหมคะ?")    
-         reply(replyToken, replyQueue[:200])
+         reply(replyToken, replyQueue[:5])
          return 'OK', 200
    
     if(text >= "6005004641"):
          print('in if')
          replyQueue.append("29 มีนาคม 2562")
          replyQueue.append("มีความต้องการอยากทราบรหัสอื่นเพิ่มเติมอีกไหมคะ?")  
-         reply(replyToken, replyQueue[:200])
+         reply(replyToken, replyQueue[:5])
          return 'OK', 200
 
 
@@ -116,7 +116,7 @@ def bot():
 
     # ทดลอง Echo ข้อความกลับไปในรูปแบบที่ส่งไปมา (แบบ json)
     replyQueue.append(msg_in_string)
-    reply(replyToken, replyQueue[:200])
+    reply(replyToken, replyQueue[:5])
 
     return 'OK', 200
 
