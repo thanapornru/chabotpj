@@ -74,31 +74,24 @@ def bot():
          reply(replyToken, replyQueue[:200])
          return 'OK', 200
     
-     elif(text <= "5805002440"):
+    if(text <= "5805002440"):
          print('in if')
          replyQueue.append("31 มีนาคม 2562")
          replyQueue.append("มีความต้องการอยากทราบรหัสอื่นเพิ่มเติมอีกไหมคะ?")    
          reply(replyToken, replyQueue[:200])
          return 'OK', 200
 
-     elif(text >= "5805002441"):
+    if(text == "5805002441-6005004641"):
          print('in if')
          replyQueue.append("30 มีนาคม 2562")
          replyQueue.append("มีความต้องการอยากทราบรหัสอื่นเพิ่มเติมอีกไหมคะ?")    
-         
-
-     elif(text <= "6005004641"):
-         print('in if')
-         replyQueue.append("30 มีนาคม 2562")
-         replyQueue.append("มีความต้องการอยากทราบรหัสอื่นเพิ่มเติมอีกไหมคะ?")    
-         
+         reply(replyToken, replyQueue[:200])
+         return 'OK', 200
    
-     elif(text >= "6005004641"):
+    if(text >= "6005004641"):
          print('in if')
          replyQueue.append("29 มีนาคม 2562")
          replyQueue.append("มีความต้องการอยากทราบรหัสอื่นเพิ่มเติมอีกไหมคะ?")  
-    else:
-         replyQueue.append('ไม่รู้ว่าจะตอบอะไรดี TT')
          reply(replyToken, replyQueue[:200])
          return 'OK', 200
 
