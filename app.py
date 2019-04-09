@@ -60,6 +60,12 @@ def bot():
          reply(replyToken, replyQueue[:5])
          return 'OK', 200
 
+    if(text <= "5405000017"):
+         print('in if')
+         replyQueue.append("ขออภัยค่ะรหัสหมายเลขนี้ไม่มีในระบบค่ะ")
+         replyQueue.append("กรุณาตรวจสอบหมายเลยรหัสใหม่อีกครั้งค่ะ")
+         reply(replyToken, replyQueue[:5])
+         return 'OK', 200
     if(text >= "6005004641"):
          print('in if')
          replyQueue.append("29 มีนาคม 2562")
@@ -95,12 +101,7 @@ def bot():
          reply(replyToken, replyQueue[:5])
          return 'OK', 200
     
-    if(text <= "5405000017"):
-         print('in if')
-         replyQueue.append("ขออภัยค่ะรหัสหมายเลขนี้ไม่มีในระบบค่ะ")
-         replyQueue.append("กรุณาตรวจสอบหมายเลยรหัสใหม่อีกครั้งค่ะ")
-         reply(replyToken, replyQueue[:5])
-         return 'OK', 200
+    
 
     
 
